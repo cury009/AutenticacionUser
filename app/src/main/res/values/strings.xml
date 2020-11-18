@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AutenticacionUser</string>
+    <string name="edt_mail">email</string>
+    <string name="edt_password">password</string>
+    <string name="btn_send">SEND</string>
+    <string name="txt_Validacion">Validacion</string>
+    <string name="ImageViewLogin">Login de Usuario</string>
+    <string name="btn_acceder">acceder</string>
+</resources>
