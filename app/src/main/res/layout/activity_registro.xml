@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityRegistro">
+
+    <TextView
+        android:id="@+id/txtRegistro"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/registro_de_usuario"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNombreR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="18"
+        android:hint="@string/edtNombreR"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtRegistro"
+        app:layout_constraintStart_toStartOf="@+id/txtRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegistro" />
+
+    <EditText
+        android:id="@+id/edtEmailR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="18"
+        android:hint="@string/edtEmailR"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/edtNombreR"
+        app:layout_constraintStart_toStartOf="@+id/edtNombreR"
+        app:layout_constraintTop_toBottomOf="@+id/edtNombreR" />
+
+    <EditText
+        android:id="@+id/edtPasswordR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="18"
+        android:hint="@string/edtPasswordR"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edtEmailR"
+        app:layout_constraintStart_toStartOf="@+id/edtEmailR"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailR" />
+
+    <EditText
+        android:id="@+id/edtPasswordR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="18"
+        android:hint="@string/repite_passwordR"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edtPasswordR1"
+        app:layout_constraintStart_toStartOf="@+id/edtPasswordR1"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordR1" />
+
+    <EditText
+        android:id="@+id/edtPhoneR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="18"
+        android:hint="@string/edtTelefono"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/edtPasswordR2"
+        app:layout_constraintStart_toStartOf="@+id/edtPasswordR2"
+        app:layout_constraintTop_toBottomOf="@+id/edtPasswordR2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btn_registrarR"
+        android:onClick="registrarse"
+        app:layout_constraintEnd_toEndOf="@+id/edtPhoneR"
+        app:layout_constraintStart_toStartOf="@+id/edtPhoneR"
+        app:layout_constraintTop_toBottomOf="@+id/edtPhoneR" />
+
+    <TextView
+        android:id="@+id/txtVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/txtVolver"
+        android:onClick="VolverLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/edtPhoneR" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

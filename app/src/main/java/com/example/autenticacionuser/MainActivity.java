@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static  final  String EXTRAMAIL = "email" ;
+    public static  final  String EXTRAMAIL = "email" ;
     EditText edt_mail = null;
     EditText edt_password = null;
     @Override
@@ -46,5 +46,10 @@ public class MainActivity extends AppCompatActivity {
 
         }
         return false;
+    }
+
+    public void registrarse(View view) {
+        Intent intent = new Intent(this,ActivityRegistro.class);
+        startActivity(intent);
     }
 }
